@@ -172,17 +172,14 @@ const Home = () => {
       </Box>
       <Box
         width="100%"
-        bg={darkMode ? "grey" : "white"}
+        bg={darkMode ? "#000" : "white"}
         display="flex"
         justifyContent="flex-end"
         alignItems="center"
         textAlign="right"
-        color="#000"
+        color={darkMode ? "#fff" : "#000"}
         height={["", "", "50px"]}
         p={3}
-        onClick={() => {
-          redirectToPage("UserList");
-        }}
       >
         <>Dark Mode</>
         &nbsp;&nbsp;&nbsp;&nbsp;
