@@ -121,6 +121,7 @@ const Home = () => {
         changeHandler={null}
         postDetail={postDetail}
         redirectToPage={redirectToPage}
+        isDarkMode={darkMode}
       />
     ),
     PostList: (
@@ -130,6 +131,7 @@ const Home = () => {
         currentUserName={currentUser?.name ? currentUser.name : null}
         currentUserID={currentUser?.userID}
         redirectToPage={redirectToPage}
+        isDarkMode={darkMode}
       />
     ),
     UserList: (
@@ -137,6 +139,7 @@ const Home = () => {
         users={users}
         routeToPosts={prepPostsRoute}
         redirectToPage={redirectToPage}
+        isDarkMode={darkMode}
       />
     ),
   };

@@ -48,9 +48,9 @@ const PostList = (props) => {
       <Box>
         <ul>
           {allPosts &&
-            allPosts.map((post) => {
+            allPosts.map((post, index) => {
               return post.title.includes(filterText) ? (
-                <li>
+                <li key={`${index}_key`}>
                   <Box
                     display="flex"
                     flexDirection="row"
@@ -58,6 +58,7 @@ const PostList = (props) => {
                     alignContent="center"
                     alignItems="center"
                     maxWidth={["", "", "50%"]}
+                    flexWrap="wrap"
                   >
                     <Box>{post.title}</Box>
                     <Box

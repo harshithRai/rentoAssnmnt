@@ -71,9 +71,9 @@ const PostDetails = (props) => {
           m={[2, 3, 3]}
           p={[1, 2, 3]}
         >
-          {comments.map((comment) => {
+          {comments.map((comment, index) => {
             return (
-              <Box display="flex" flexDirection="column">
+              <Box display="flex" flexDirection="column" key={`${index}_key`}>
                 <Box fontWeight="bold" fontSize={[11, 11, 12]}>
                   {comment.name}
                 </Box>
